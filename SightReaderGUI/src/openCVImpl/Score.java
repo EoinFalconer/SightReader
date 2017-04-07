@@ -40,7 +40,7 @@ public class Score {
 	int spaceHeight;
 	String story = "";
 	String xml = "";
-	String scoreName = "HARK-The-Herald";
+	String scoreName = "CONVERTED_SCORE";
 	String filepath;
 	public Score(String filepath) {
 		try {
@@ -48,8 +48,8 @@ public class Score {
 			symbolImage = ImageIO.read(new File(filepath));
 			testImage = ImageIO.read(new File(filepath));
 			Pixel[][] scoreSymbols = this.buildArrayFromBitmap(symbolImage);
-			boolean flag2 = ImageIO.write(symbolImage, "png", new File("note-heads.png"));
-			boolean flag1 = ImageIO.write(testImage, "png", new File("showing.png"));
+			//boolean flag2 = ImageIO.write(symbolImage, "png", new File("note-heads.png"));
+			//boolean flag1 = ImageIO.write(testImage, "png", new File("showing.png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
